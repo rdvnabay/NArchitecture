@@ -7,8 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\corePackages\Core.CrossCuttingConcerns\Core.CrossCuttingConcerns.csproj" />
     <ProjectReference Include="..\..\..\corePackages\Core.Persistemce\Core.Persistemce.csproj" />
     <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Brands\Models\" />
+    <Folder Include="Features\Brands\Constants\" />
+    <Folder Include="Features\Brands\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
   </ItemGroup>
 
 </Project>
