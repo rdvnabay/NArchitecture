@@ -9,21 +9,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "projects", "projects", "{68
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rentACar", "rentACar", "{0875D27D-A5A1-4754-B25E-670426C7F3B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\projects\rentACar\Application\Application.csproj", "{FFA93CA3-79D5-42E1-96DF-5B53B62903A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\projects\rentACar\Application\Application.csproj", "{FFA93CA3-79D5-42E1-96DF-5B53B62903A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\projects\rentACar\Domain\Domain.csproj", "{AA113862-7245-4064-8E9D-7627F67A1D38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\projects\rentACar\Domain\Domain.csproj", "{AA113862-7245-4064-8E9D-7627F67A1D38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\projects\rentACar\Infrastructure\Infrastructure.csproj", "{28D33D3F-72DC-4994-90AF-6618621C2C19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\projects\rentACar\Infrastructure\Infrastructure.csproj", "{28D33D3F-72DC-4994-90AF-6618621C2C19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "src\projects\rentACar\Persistence\Persistence.csproj", "{4551C384-EBF7-43D5-B2E1-B449F038A258}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "src\projects\rentACar\Persistence\Persistence.csproj", "{4551C384-EBF7-43D5-B2E1-B449F038A258}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "src\projects\rentACar\WebAPI\WebAPI.csproj", "{18DC18B1-82D1-4357-9D15-DC4B99A56A51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "src\projects\rentACar\WebAPI\WebAPI.csproj", "{18DC18B1-82D1-4357-9D15-DC4B99A56A51}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "corePackages", "corePackages", "{8E28A289-98B7-4ACC-8F7F-8DEC1A485A08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Domain", "src\corePackages\Core.Domain\Core.Domain.csproj", "{6CF04787-3A1E-4538-A8D2-32AABC2FA400}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Domain", "src\corePackages\Core.Domain\Core.Domain.csproj", "{6CF04787-3A1E-4538-A8D2-32AABC2FA400}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Persistemce", "src\corePackages\Core.Persistemce\Core.Persistemce.csproj", "{10752A06-3B07-462E-863D-92E8C9FC68A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Persistemce", "src\corePackages\Core.Persistemce\Core.Persistemce.csproj", "{10752A06-3B07-462E-863D-92E8C9FC68A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.CrossCuttingConcerns", "src\corePackages\Core.CrossCuttingConcerns\Core.CrossCuttingConcerns.csproj", "{37C23F25-92BA-448F-97C6-6A5D8D218FA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{10752A06-3B07-462E-863D-92E8C9FC68A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10752A06-3B07-462E-863D-92E8C9FC68A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10752A06-3B07-462E-863D-92E8C9FC68A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37C23F25-92BA-448F-97C6-6A5D8D218FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37C23F25-92BA-448F-97C6-6A5D8D218FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37C23F25-92BA-448F-97C6-6A5D8D218FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37C23F25-92BA-448F-97C6-6A5D8D218FA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{8E28A289-98B7-4ACC-8F7F-8DEC1A485A08} = {792C5B3F-67D9-4BF9-A107-F1075D3E1DA2}
 		{6CF04787-3A1E-4538-A8D2-32AABC2FA400} = {8E28A289-98B7-4ACC-8F7F-8DEC1A485A08}
 		{10752A06-3B07-462E-863D-92E8C9FC68A0} = {8E28A289-98B7-4ACC-8F7F-8DEC1A485A08}
+		{37C23F25-92BA-448F-97C6-6A5D8D218FA7} = {8E28A289-98B7-4ACC-8F7F-8DEC1A485A08}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {69C999F1-0EE8-4A08-BAC8-2DB9F11DBD51}
